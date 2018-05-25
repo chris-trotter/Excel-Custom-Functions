@@ -85,6 +85,14 @@ function COMPANYSTATUS(company_number) {
 	});
 }
 
+function DIRECTORS(company_number) {
+	return new OfficeExtension.Promise(function(resolve) {
+		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+			resolve(response);
+		});
+	});
+}
+
 
 function LASTMEMBERSLIST(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
