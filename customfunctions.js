@@ -23,7 +23,7 @@ function NAME(company_number) {
 	// waits 1 second before returning the result
 	
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest('http://localhost/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/company-name/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -31,7 +31,7 @@ function NAME(company_number) {
 
 function REGADDRESS(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/company-address/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -39,7 +39,7 @@ function REGADDRESS(company_number) {
 
 function LIQUIDATED(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/has-been-liquidated/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -47,7 +47,7 @@ function LIQUIDATED(company_number) {
 
 function SICCODES(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/sic-code/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -55,7 +55,7 @@ function SICCODES(company_number) {
 
 function ACCOUNTINGDATE(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/accounting-reference-date/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -63,7 +63,7 @@ function ACCOUNTINGDATE(company_number) {
 
 function OVERDUESTATUS(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/overdue-accounts/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -71,7 +71,7 @@ function OVERDUESTATUS(company_number) {
 
 function INCORPORATIONDATE(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/incorporation-date/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -79,7 +79,7 @@ function INCORPORATIONDATE(company_number) {
 
 function COMPANYSTATUS(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/company-status/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -87,7 +87,7 @@ function COMPANYSTATUS(company_number) {
 
 function DIRECTORS(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/company-active-directors/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -95,7 +95,7 @@ function DIRECTORS(company_number) {
 
 function SIGCONTROL(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/company-significant-control/' + company_number, function(response){
 			resolve(response);
 		});
 	});
@@ -103,7 +103,7 @@ function SIGCONTROL(company_number) {
 
 function LASTMEMBERSLIST(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
-		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+		httpRequest(endPoint + '/last-full-members-list/' + company_number, function(response){
 			resolve(response);
 		});
 	});
