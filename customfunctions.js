@@ -37,6 +37,14 @@ function REGADDRESS(company_number) {
 	});
 }
 
+function LIQUIDATED(company_number) {
+	return new OfficeExtension.Promise(function(resolve) {
+		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+			resolve(response);
+		});
+	});
+}
+
 // The following function is an example of an asynchronous function:
 function ADD42ASYNC(num1, num2) {
 	// waits 1 second before returning the result
