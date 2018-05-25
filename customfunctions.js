@@ -53,6 +53,14 @@ function SICCODES(company_number) {
 	});
 }
 
+function ACCOUNTINGDATE(company_number) {
+	return new OfficeExtension.Promise(function(resolve) {
+		httpRequest(endPoint + '/company-name/' + company_number, function(response){
+			resolve(response);
+		});
+	});
+}
+
 function LASTMEMBERSLIST(company_number) {
 	return new OfficeExtension.Promise(function(resolve) {
 		httpRequest(endPoint + '/company-name/' + company_number, function(response){
