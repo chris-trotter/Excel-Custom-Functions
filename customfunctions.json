@@ -1,29 +1,23 @@
 ﻿{
 	"functions": [
 		{
-			"name": "ADD42", 
-			"description":  "adds 42 to the input numbers",
+			"name": "NAME", 
+			"description":  "Retrieve company's name from Companies House",
 			"helpUrl": "http://dev.office.com",
 			"result": {
-				"type": "number",
+				"type": "string",
 				"dimensionality": "scalar"
 			},
 			"parameters": [
 				{
-					"name": "number 1",
-					"description": "first number to add",
-					"type": "number",
-					"dimensionality": "scalar"
-				},
-				{
-					"name": "number 2",
-					"description": "second number to add",
-					"type": "number",
+					"name": "company number",
+					"description": "The company's Companies House number ",
+					"type": "string",
 					"dimensionality": "scalar"
 				}
 			],
 			"options": {
-				"sync": true
+				"sync": false
 			}
 		},
 		{

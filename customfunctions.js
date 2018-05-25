@@ -1,5 +1,30 @@
-﻿function ADD42(num1, num2) {
-	return num1 + num2 + 42;
+﻿function httpRequest(url, callback) {
+		var xhr = new XMLHttpRequest();
+
+		// The last parameter must be set to true to make an asynchronous request
+		xhr.open('GET', url, true);
+		
+		xhr.setRequestHeader('Content-type', 'application/json');
+		xhr.setRequestHeader('Accept', 'application/json');
+
+		xhr.onload = function() {
+			if (xhr.status >= 200 && xhr.status < 300) {
+				callback(xhr.status);
+			} else {
+				callback(xhr.status);
+			}
+		};
+		xhr.send();
+}
+
+function NAME(company_number) {
+	// waits 1 second before returning the result
+	
+	return new OfficeExtension.Promise(function(resolve) {
+		httpRequest('http://localhost/company-name/' + company_number, function(response){
+			resolve(response);
+		});
+	});
 }
 
 // The following function is an example of an asynchronous function:
