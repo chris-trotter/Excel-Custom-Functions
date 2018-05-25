@@ -121,6 +121,26 @@
 			}
 		},
 		{
+			"name": "OVERDUESTATUS", 
+			"description":  "Retrieve company's accounting overdue status from Companies House",
+			"helpUrl": "http://dev.office.com",
+			"result": {
+				"type": "string",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+				{
+					"name": "company number",
+					"description": "The company's Companies House number ",
+					"type": "string",
+					"dimensionality": "scalar"
+				}
+			],
+			"options": {
+				"sync": false
+			}
+		},
+		{
 			"name": "ADD42ASYNC", 
 			"description":  "asynchronously wait 1 second, then add 42",
 			"helpUrl": "http://dev.office.com",
