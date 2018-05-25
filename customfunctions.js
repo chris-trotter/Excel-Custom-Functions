@@ -1,4 +1,6 @@
-﻿function httpRequest(url, callback) {
+﻿const endPoint = 'http://localhost';
+
+function httpRequest(url, callback) {
 		var xhr = new XMLHttpRequest();
 
 		// The last parameter must be set to true to make an asynchronous request
@@ -22,6 +24,14 @@ function NAME(company_number) {
 	
 	return new OfficeExtension.Promise(function(resolve) {
 		httpRequest('http://localhost/company-name/' + company_number, function(response){
+			resolve(response);
+		});
+	});
+}
+
+function REGADDRESS(company_number) {
+	return new OfficeExtension.Promise(function(resolve) {
+		httpRequest(endPoint + '/company-name/' + company_number, function(response){
 			resolve(response);
 		});
 	});
