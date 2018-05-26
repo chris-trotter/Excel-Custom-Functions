@@ -1,4 +1,4 @@
-﻿const endPoint = 'https://excel-ch-api.azurewebsites.net';
+﻿const endPoint = 'https://excel-ch-api.herokuapp.com';
 
 function httpRequest(url, callback) {
 		var xhr = new XMLHttpRequest();
