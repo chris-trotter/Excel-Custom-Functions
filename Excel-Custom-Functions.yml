@@ -1,15 +1,15 @@
 ### YamlMime:Sample
 sample:
-- name: Custom functions in Excel (Preview)
+- name: Companies House Excel Plugin
   path: ''
-  description: Learn how to use custom functions in Excel (similar to user-defined functions, or UDFs). Custom functions are JavaScript functions that you can add to Excel, and then use them like any native Excel function (for example =Sum). This sample accompanies the Custom Functions Overview topic.
+  description: Query a company's Company House information using company number
   readme: ''
   generateZip: FALSE
   isLive: TRUE
   technologies:
   - Office Add-in
   azureDeploy: ''
-  author: Reezali
+  author: Chris Trotter (christopher.trotter@gmail.com)
   platforms: []
   languages:
   - JavaScript
