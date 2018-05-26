@@ -1,4 +1,4 @@
-﻿const endPoint = 'http://localhost';
+﻿const endPoint = 'https://excel-ch-api.azurewebsites.net';
 
 function httpRequest(url, callback) {
 		var xhr = new XMLHttpRequest();
