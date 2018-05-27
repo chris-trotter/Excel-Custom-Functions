@@ -6,17 +6,17 @@ This project adds custom functions to excel that allows for querying company dat
 
 ## Current query functions
 
-`=COMPANY.ACCOUNTINGDATE` - Company's accounting date
-`=COMPANY.NAME` - Company's name
-`=COMPANY.REGADDRESS` - Company's registered address
-`=COMPANY.LIQUIDATED` - Company's liquidation status
-`=COMPANY.SICCODES` - Company's registered [SIC Codes](https://www.gov.uk/government/publications/standard-industrial-classification-of-economic-activities-sic)
-`=COMPANY.OVERDUESTATUS` - Status of company's accounts
-`=COMPANY.INCORPORATIONDATE` - Date of company's incorporation
-`=COMPANY.COMPANYSTATUS` - Company's current status
-`=COMPANY.DIRECTORS` - Company's directors' names
-`=COMPANY.SIGCONTROL` - Company's significant controlling persons' names
-`=COMPANY.LASTMEMBERSLIST` - Date of company's last members list submission
+- `=COMPANY.ACCOUNTINGDATE` - Company's accounting date
+- `=COMPANY.NAME` - Company's name
+- `=COMPANY.REGADDRESS` - Company's registered address
+- `=COMPANY.LIQUIDATED` - Company's liquidation status
+- `=COMPANY.SICCODES` - Company's registered [SIC Codes](https://www.gov.uk/government/publications/standard-industrial-classification-of-economic-activities-sic)
+- `=COMPANY.OVERDUESTATUS` - Status of company's accounts
+- `=COMPANY.INCORPORATIONDATE` - Date of company's incorporation
+- `=COMPANY.COMPANYSTATUS` - Company's current status
+- `=COMPANY.DIRECTORS` - Company's directors' names
+- `=COMPANY.SIGCONTROL` - Company's significant controlling persons' names
+- `=COMPANY.LASTMEMBERSLIST` - Date of company's last members list submission
 
 ## To use the project
 
