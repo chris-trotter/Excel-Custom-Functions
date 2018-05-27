@@ -2,6 +2,8 @@
 
 This addin represents Excel Custom functions that are used to query Companies House for a company. 
 
+![excel-custom-functions-video.gif](https://s1.gifyu.com/images/excel-custom-functions-video.gif)
+
 ## To use the project
 
 Follow these instructions to use this custom function sample add-in:
